@@ -7,12 +7,12 @@ export default function Page() {
   const { blogData } = useContext(BlogContext);
   const { index } = useParams();
   const articleIndex = parseInt(index, 10);
-  const blog = blogData[articleIndex];
+  const article = blogData[articleIndex];
   
 
 
     
-      if (!blog) {
+      if (!article) {
         return <div>Loading...</div>; 
       }
 
@@ -22,17 +22,26 @@ export default function Page() {
   return (
     <div>
       <Navbar/>
-      <div className="featuredcard" >
-        <div className="featured_image">
-            <img src={blog.urlToImage}/>
+      <div className="blog_page" >
+
+      <div className="blog_page_title">
+            <h2>{article.title} </h2>
         </div>
+        <div className="blog_page_image">
+            <img src={article.urlToImage}/>
+        </div>
+
+        {/* <div className="blog_category">
+          <p>{article.} </p>
+        </div> */}
 
         
 
-        <div className="featured_title">
-            <h2> {blog.title}</h2>
-        </div>
-     
+        
+          <div className="blog_page_desc">
+            <p>{article.description}</p>
+          </div>
+        
 
       </div>
     </div>

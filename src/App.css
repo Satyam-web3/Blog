@@ -330,6 +330,32 @@
 }
 /* sidecard end */
 
+
+
+
+/* blog page starts */
+.blog_page{
+  width: 80%;
+  overflow: hidden;
+  padding: 4rem;
+}
+.blog_page_title{
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.blog_page_image{
+width: 100%;
+margin-bottom: 2rem;
+}
+.blog_page_image img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* blog page ends */
+
 /* footer starts */
 .footer{
   background-color:var(--black-color);
