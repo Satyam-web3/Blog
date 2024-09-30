@@ -337,7 +337,8 @@
 .blog_page{
   width: 80%;
   overflow: hidden;
-  padding: 4rem;
+  padding: 5rem;
+  padding-left: 7rem;
 }
 .blog_page_title{
   font-size: 2rem;
@@ -345,7 +346,7 @@
 }
 
 .blog_page_image{
-width: 100%;
+width: 90%;
 margin-bottom: 2rem;
 }
 .blog_page_image img{
