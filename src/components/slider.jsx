@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { BlogContext } from './BlogContext'; // Assuming you already have BlogContext
+import React, { useState, useContext, useEffect } from "react";
+import { BlogContext } from "./BlogContext"; // Assuming you already have BlogContext
 
 export default function BlogSlider({ intervalTime = 3000 }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,19 +17,28 @@ export default function BlogSlider({ intervalTime = 3000 }) {
     const slideInterval = setInterval(nextSlide, intervalTime);
 
     return () => {
-      clearInterval(slideInterval); 
+      clearInterval(slideInterval);
     };
   }, [currentSlide, intervalTime]);
 
   return (
     <div className="slider">
-      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+      <div
+        className="slider-container"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
         {blogData.map((blog, index) => (
-          <div key={index} className={`slide ${index === currentSlide ? 'active' : ''}`}>
-            <img src={blog.urlToImage} alt={blog.title} />
+          <div
+            key={index}
+            className={`slide ${index === currentSlide ? "active" : ""}`}
+          >
+            <img
+              src={blog.urlToImage}
+              alt={blog.title}
+              style={{ objectFit: "cover" }}
+            />
             <div className="blog-content">
               <h2>{blog.title}</h2>
-              
             </div>
           </div>
         ))}
