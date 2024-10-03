@@ -19,11 +19,11 @@ export const BlogProvider = ({ children }) => {
     }
   };
 
- 
+
 
   useEffect(() => {
     fetchBlogData();
-  }, []); 
+  }, []);
 
   return (
     <BlogContext.Provider value={{ blogData }}>

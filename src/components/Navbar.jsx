@@ -13,16 +13,16 @@ export default function Navbar() {
     <div>
       <div className="top_section">
         <div className="left_section">
-        <FaFacebook />
-        <FaYoutube />
-        <FaXTwitter />
-        <FaInstagram />
+          <FaFacebook />
+          <FaYoutube />
+          <FaXTwitter />
+          <FaInstagram />
 
 
         </div>
         <div className="right_section">
-          
-          
+
+
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function Navbar() {
           <li>Privacy Policy</li>
           <li ><FaSearch /></li>
         </div>
-        
+
       </div>
 
 

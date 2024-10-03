@@ -65,14 +65,14 @@ export default function Home() {
             <h4>Lifestyle</h4>
             <div className="lifestyle-blogs">
               <div className="lifestyle-left">
-                <Blogcard index={3} showDescription={true}/>
+                <Blogcard index={3} showDescription={true} />
               </div>
               <div className="lifestyle-right">
-              <SidePost index='2' />
-            <SidePost index='22' />
-            <SidePost index='19' />
-            <SidePost index='22' />
-            
+                <SidePost index='2' />
+                <SidePost index='22' />
+                <SidePost index='19' />
+                <SidePost index='22' />
+
               </div>
             </div>
           </div>
@@ -102,9 +102,9 @@ export default function Home() {
           </div>
         </div>
 
-      {/* sidebar ends */}
+        {/* sidebar ends */}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

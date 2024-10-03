@@ -17,7 +17,7 @@ export default function BlogSlider({ intervalTime = 3000 }) {
     const slideInterval = setInterval(nextSlide, intervalTime);
 
     return () => {
-      clearInterval(slideInterval); 
+      clearInterval(slideInterval);
     };
   }, [currentSlide, intervalTime]);
 
@@ -29,7 +29,7 @@ export default function BlogSlider({ intervalTime = 3000 }) {
             <img src={blog.urlToImage} alt={blog.title} />
             <div className="blog-content">
               <h2>{blog.title}</h2>
-              
+
             </div>
           </div>
         ))}
