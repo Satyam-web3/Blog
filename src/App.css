@@ -13,7 +13,7 @@
 
 /* top section start */
 .top_section {
-  display: flex;
+  display: relative;
   background: var(--grey-color);
   padding: 0.5rem;
 }
@@ -28,7 +28,8 @@
 /* Header section start */
 
 .Header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   display: flex;
   background: var(--black-color);
   border: solid black 1px;
@@ -36,6 +37,8 @@
   padding-right: 4rem;
   align-items: center;
   margin: 0 auto;
+  z-index:999;
+  
 }
 .Navbar {
   display: flex;
@@ -98,6 +101,7 @@
   width: 100%;
   height: 30rem;
   overflow: hidden;
+  margin-top: 3.5rem;
 }
 
 .featured_section_1 {
