@@ -31,13 +31,6 @@ export default function Page() {
           <img src={article.urlToImage} />
         </div>
 
-        {/* <div className="blog_category">
-          <p>{article.} </p>
-        </div> */}
-
-
-
-
         <div className="blog_page_desc">
           <p>{article.description}</p>
         </div>
