@@ -9,7 +9,12 @@ export const BlogProvider = ({ children }) => {
       const url = 'https://newsapi.org/v2/everything?q=index&apiKey=625d5b8e6e2545f38b1c27f091fe9389';
       const response = await fetch(url);
       const data = await response.json();
-      setBlogData(data.articles);
+      const articlesWithId = data.articles.map((article, index) => ({
+        ...article,
+        id: index.toString(),
+      }));
+
+      setBlogData(articlesWithId);
     } catch (error) {
       console.error("Error fetching blog data:", error);
     }
