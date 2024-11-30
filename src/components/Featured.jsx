@@ -20,7 +20,7 @@ export default function Featured(props) {
       <Link to={`/article/${props.index}`}>
         <div className="featuredcard" style={cardStyle}>
           <div className="featured_image">
-            <img src={article.urlToImage} />
+            <img src={article.image_url} />
           </div>
 
           <div className="featured_title">

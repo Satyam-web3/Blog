@@ -28,7 +28,7 @@ export default function Page() {
           <h2>{article.title} </h2>
         </div>
         <div className="blog_page_image">
-          <img src={article.urlToImage} />
+          <img src={article.image_url} />
         </div>
 
         <div className="blog_page_desc">

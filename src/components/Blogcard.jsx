@@ -20,7 +20,7 @@ export default function Blogcard(props) {
       <Link to={`/article/${props.index}`}>
         <div className="blogcard" style={cardStyle}>
           <div className="blog_image">
-            <img src={article.urlToImage} />
+            <img src={article.image_url} />
           </div>
 
           {/* <div className="blog_category">

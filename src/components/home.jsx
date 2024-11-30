@@ -17,7 +17,7 @@ export default function Home() {
       {/* featured section */}
       <div className="featured_section">
         <div className="featured_section_1">
-          <Featured index={3} height='30rem' font='1.3rem' />
+          <Featured index={9} height='30rem' font='1.3rem' />
         </div>
 
         <div className="featured_section_2">
@@ -36,7 +36,7 @@ export default function Home() {
         <h4>Hot Section</h4>
         <div className="hot_blogs">
 
-          <Blogcard index={1} />
+          <Blogcard index={7} />
           <Blogcard index={6} />
           <Blogcard index={8} />
         </div>
@@ -49,9 +49,9 @@ export default function Home() {
         <div className="left-full-section">
           <h4>Fashion</h4>
           <div className="fashion_blogs">
-            <Blogcard index={13} width='15rem' height='15rem' font='0.5rem' />
-            <Blogcard index={18} width='15rem' height='15rem' font='0.5rem' />
-            <Blogcard index={22} width='15rem' height='15rem' font='0.5rem' />
+            <Blogcard index={3} width='15rem' height='15rem' font='0.5rem' />
+            <Blogcard index={7} width='15rem' height='15rem' font='0.5rem' />
+            <Blogcard index={0} width='15rem' height='15rem' font='0.5rem' />
 
           </div>
           <div className="fashion_blogs">
@@ -69,9 +69,9 @@ export default function Home() {
               </div>
               <div className="lifestyle-right">
                 <SidePost index='2' />
-                <SidePost index='22' />
-                <SidePost index='19' />
-                <SidePost index='22' />
+                <SidePost index='8' />
+                <SidePost index='4' />
+                <SidePost index='9' />
 
               </div>
             </div>
@@ -97,8 +97,8 @@ export default function Home() {
           <div className="Most-commented">
             <h4>Most Commented</h4>
             <SidePost index='2' />
-            <SidePost index='22' />
-            <SidePost index='19' />
+            <SidePost index='9' />
+            <SidePost index='0' />
           </div>
         </div>
 

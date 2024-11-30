@@ -19,7 +19,7 @@ export default function SidePost(props) {
     <div>
       <div className="sidecard" style={cardStyle}>
         <div className="sidecard_image">
-          <img src={article.urlToImage} />
+          <img src={article.image_url} />
         </div>
 
         <div className="sidecard_title">

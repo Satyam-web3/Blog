@@ -19,7 +19,7 @@ export default function SearchResults() {
         filteredBlogs.map((blog, index) => (
           <div key={index} className="blog-result">
             <Link to={`/article/${blog.id}`}>
-            <img src={blog.urlToImage} alt={blog.title}  />
+            <img src={blog.image_url} alt={blog.title}  />
             <h3>{blog.title}</h3>
             </Link>
             <p>{blog.description}</p>

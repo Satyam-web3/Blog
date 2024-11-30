@@ -33,7 +33,7 @@ export default function BlogSlider({ intervalTime = 3000 }) {
             className={`slide ${index === currentSlide ? "active" : ""}`}
           >
             <img
-              src={blog.urlToImage}
+              src={blog.image_url}
               alt={blog.title}
               style={{ objectFit: "cover" }}
             />

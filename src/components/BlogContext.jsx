@@ -6,10 +6,11 @@ export const BlogProvider = ({ children }) => {
 
   const fetchBlogData = async () => {
     try {
-      const url = 'https://newsapi.org/v2/everything?q=index&apiKey=625d5b8e6e2545f38b1c27f091fe9389';
+      const url = 'https://newsdata.io/api/1/latest?apikey=pub_6086489604694011c081d9bbe51b782ff11bc&domain=bbc&language=en';
       const response = await fetch(url);
       const data = await response.json();
-      const articlesWithId = data.articles.map((article, index) => ({
+      console.log(data)
+      const articlesWithId = data.results.map((article, index) => ({
         ...article,
         id: index.toString(),
       }));
