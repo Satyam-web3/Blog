@@ -5,6 +5,8 @@ import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
  
@@ -41,10 +43,10 @@ export default function Navbar() {
 
       <div className='Header'>
         <div className="Navbar">
-          <li>Home</li>
-          <li>Categories</li>
-          <li>About Us</li>
-          <li>Privacy Policy</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/categories">Categories</Link></li>
+          <li><Link to="/aboutus">About Us</Link></li>
+          <li><Link to="privacy-policy">Privacy Policy</Link></li>
           <li ><input
               type="search"
               placeholder="Search blogs..."
